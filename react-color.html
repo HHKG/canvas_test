@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>更改矩形的颜色</title>
+	</head>
+	<body>
+		<canvas id="stroke" width="220" height="220"></canvas>
+		<script>
+			var c=document.getElementById('stroke');
+			var ctx=c.getContext("2d");
+			ctx.strokeStyle="#0000ff";
+			ctx.strokeRect(20,20,100,100);
+			var gradient=ctx.createLinearGradient(100,100,220,0);
+			gradient.addColorStop(0,"red");
+			gradient.addColorStop(0.5,"#000");
+			gradient.addColorStop(1,"#fff");
+			ctx.strokeStyle=gradient;
+			ctx.strokeRect(100,100,100,100);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>放射性渐变</title>
+	</head>
+	<body>
+		<canvas id='radial'width="200" height="200"></canvas>
+		<script>
+			var c=document.getElementById('radial');
+			var ctx=c.getContext("2d");
+			// 放射性渐变
+			var radialGradient=ctx.createRadialGradient(75,50,5,90,60,100);
+			radialGradient.addColorStop(0,"red");//中心的颜色
+			radialGradient.addColorStop(1,"#fff");//旁边的颜色
+			ctx.fillStyle=radialGradient;
+			ctx.fillRect(10,10,150,100);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>修改文字</title>
+	</head>
+	<body>
+		<canvas id="text-linear" width="200" height="200"></canvas>
+		<script>
+			var c=document.getElementById('text-linear');
+			var ctx=c.getContext("2d");
+			ctx.font="30px Verdana";
+			var my_gradient=ctx.createLinearGradient(100,0,200,0);
+			my_gradient.addColorStop(0,'red');
+			my_gradient.addColorStop(0.5,'blue');
+			my_gradient.addColorStop(1,'#000');
+			ctx.strokeStyle=my_gradient;
+			ctx.strokeText("黄华康",100,100);
+		</script>
+	</body>
+</html>

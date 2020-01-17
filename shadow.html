@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>canvas背景颜色</title>
+	</head>
+	<style>
+		#shadow{
+			margin: 0 auto;
+			border: 1px solid red;
+		}
+	</style>
+	<body>
+		<canvas id="shadow" width="200" height="200"></canvas>
+		<script>
+			var c=document.getElementById("shadow");
+			var ctx=c.getContext("2d");
+			ctx.shadowBlur=20;
+			ctx.shadowColor="black";
+			ctx.fillStyle="blue";
+			ctx.fillRect(20,20,100,100);
+		</script>
+	</body>
+</html>
