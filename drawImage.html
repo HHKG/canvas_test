@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>绘制图片/视频</title>
+	</head>
+	<body>
+		<img id="img" src="img/timg%20(1).jpg" />
+		<canvas id="drawImage" width="500" height="500"></canvas>
+		<script>
+			var c=document.getElementById("drawImage");
+			var ctx=c.getContext("2d");
+			var img=document.getElementById("img");
+			img.onload=function(){
+				ctx.drawImage(img,600,100,100,100,50,10,100,100);
+			}
+		</script>
+	</body>
+</html>

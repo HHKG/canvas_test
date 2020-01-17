@@ -9,7 +9,9 @@
 		<script>
 			var c=document.getElementById("quadraticCurve");
 			var ctx=c.getContext("2d");
-			
+			ctx.moveTo(20,20);
+			ctx.quadraticCurveTo(20,100,200,20);
+			ctx.stroke();
 		</script>
 	</body>
 </html>

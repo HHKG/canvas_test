@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>旋转绘图的角度</title>
+	</head>
+	<body>
+		<canvas id="rotate" width="200" height="200"></canvas>
+		<script>
+			var c=document.getElementById("rotate");
+			var ctx=c.getContext("2d");
+			ctx.rotate(45*Math.PI/180);
+			ctx.fillRect(100,10,50,50);
+		</script>
+	</body>
+</html>

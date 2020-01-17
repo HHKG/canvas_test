@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>缩放图形</title>
+	</head>
+	<body>
+		<canvas id="scale" width="200" height="200"></canvas>
+		<script>
+			var c=document.getElementById("scale");
+			var ctx=c.getContext("2d");
+			ctx.beginPath();
+			ctx.rect(5,5,25,15);
+			ctx.scale(2,2);
+			ctx.rect(5,5,25,15);
+			ctx.scale(2,2);
+			ctx.rect(5,5,25,15);
+			ctx.stroke();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>三次方贝塞尔曲线</title>
+	</head>
+	<body>
+		<canvas id="bezierCurve" width="200" height="200"></canvas>
+		<script>
+			var c=document.getElementById("bezierCurve");
+			var ctx=c.getContext("2d");
+			ctx.beginPath();
+			ctx.moveTo(20,20);//起点
+			ctx.bezierCurveTo(20,100,200,100,200,20);//分别是控制点1，控制点2，终点
+			ctx.stroke();
+		</script>
+	</body>
+</html>

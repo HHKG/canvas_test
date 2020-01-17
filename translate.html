@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>重新在新的坐标渲染新绘图</title>
+	</head>
+	<body>
+		<canvas id="translate" width="200" height="200"></canvas>
+		<script>
+			var c=document.getElementById("translate");
+			var ctx=c.getContext("2d");
+			ctx.fillRect(20,20,50,30);
+			ctx.translate(40,40,50,30);
+			ctx.fillRect(20,20,50,30);
+		</script>
+	</body>
+</html>

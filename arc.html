@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>创建空心圆</title>
+	</head>
+	<body>
+		<canvas id="arc" width="200" height="200"></canvas>
+		<script>
+			var c=document.getElementById("arc");
+			var ctx=c.getContext("2d");
+			ctx.beginPath();
+			ctx.arc(100,100,50,0,2*Math.PI,true);
+			ctx.stroke();
+		</script>
+	</body>
+</html>

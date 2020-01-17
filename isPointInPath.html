@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>isPointInPath</title>
+	</head>
+	<body>
+		<canvas id="isPointInPath" width="200" height="200"></canvas>
+		<script>
+			var c=document.getElementById("isPointInPath");
+			var ctx=c.getContext("2d");
+			ctx.beginPath();
+			ctx.rect(20,20,100,100);
+			if(ctx.isPointInPath(20,100)){//此时的ctx.isPointInPath(20,100)返回一个true
+				ctx.stroke();
+			}
+		</script>
+	</body>
+</html>

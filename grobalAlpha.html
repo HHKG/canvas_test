@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>绘制图形的透明度globalAlpha</title>
+	</head>
+	<body>
+		<canvas id="alpha" width="200" height="200"></canvas>
+		<script>
+			var c=document.getElementById("alpha");
+			var ctx=c.getContext("2d");
+			ctx.fillStyle="red";
+			ctx.fillRect(10,10,50,30);
+			
+			//接下来的矩形设置颜色为0.2；
+			ctx.globalAlpha=0.2;
+			
+			ctx.fillStyle="aqua";
+			ctx.fillRect(50,30,50,30);
+			
+			ctx.fillStyle="blueviolet";
+			ctx.fillRect(90,50,50,30);
+		</script>
+	</body>
+</html>
